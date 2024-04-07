@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+
+</head>
+
+<body style="color:white; background:gray">
+    <h1>intermediate</h1>
+</body>
+<script>
+    //  const UL = document.createElement('div')
+    //  const LI = document.createElement ('li')
+    //  LI.innerHTML = "one"
+    //  const addText = document.createTextNode("textNode")
+    //  LI.appendChild(addText)
+    //  document.body.append(UL)
+    //  UL.appendChild(LI)
+
+    const UL = document.createElement('ul')
+    UL.setAttribute('id', 'language')
+    document.body.append(UL)
+    // console.log(UL)
+
+    // ------------------------- 
+    // function addLanguage(langName) {
+    //     const LI = document.createElement('li')
+    //     LI.innerHTML = `${langName}`
+    //     // UL.appendChild(LI)
+    //     document.querySelector('#language').appendChild(LI)
+
+    // }
+    // addLanguage('Python')
+    // addLanguage('Javascript')
+    // addLanguage('Java')
+
+    // -------------------------
+    function addLanguage(langName) {
+        const LI = document.createElement('li')
+        const textNode = document.createTextNode(langName)
+        LI.append(textNode)
+        UL.appendChild(LI)
+    }
+    addLanguage("Python")
+    addLanguage("JavaScripts")
+    addLanguage("Rubby")
+
+
+    // Edit
+    // const secondLang = document.querySelector("li:nth-child(3)")
+    // console.log(secondLang)
+    // secondLang.innerHTML = "Mojo"
+    // secondLang.replaceWith("Mojo")
+
+    // replace ---------
+    // UL.replaceChild()
+    // UL.replaceChildren()
+
+    // Edit --
+    // const firstLang = document.querySelector("li:first-child")
+    // console.log(firstLang)
+    // firstLang.outerHTML = "<li>c++</li>"
+
+    // const lastLang = document.querySelector("li:last-child")
+    // console.log(lastLang)
+    // lastLang.outerHTML = "<li>c</li>"
+
+    // const nthLang = document.querySelector("li:nth-child(2)")
+    // console.log(nthLang)
+    // const newnthLang = nthLang.outerHTML = "<li>goLang</li>"
+    // console.log(nthLang)
+    
+    //remove
+    // const lastLang = document.querySelector("li:last-child")
+    // console.log(lastLang)
+    // lastLang.remove()
+    // console.log(lastLang)
+
+
+</script>
+
+</html>
